@@ -262,6 +262,15 @@ tgb config unset proxy
 - 所有读取类命令都支持 `--json`，方便脚本和 AI Agent 使用。
 - 出现登录错误时，会提示执行 `tgb login`。
 
+## 开发与测试
+
+```bash
+bun test          # 运行 tests/ 下的单元测试
+bunx tsc --noEmit # 类型检查
+```
+
+测试覆盖：文本/HTML 清洗、帖子详情解析、论坛与生活吧列表解析、用户帖子解析、实盘比赛解析、CLI 帮助与配置读写。解析器测试使用 `tests/fixtures/` 下的离线 HTML，不依赖网络。
+
 ## 说明
 
 - 本项目仅做 HTTP 接口访问，不模拟浏览器操作，不修改页面。
