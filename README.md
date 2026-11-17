@@ -40,6 +40,18 @@ cp dist/tgb /usr/local/bin/
 
 之后直接运行 `tgb --help`。
 
+也可以直接下载 GitHub Releases 中的预编译版本：
+
+| 平台 | 文件 |
+| --- | --- |
+| Windows x64 | `tgb-windows-x64.exe` |
+| Linux x64 | `tgb-linux-x64` |
+| Linux ARM64 | `tgb-linux-arm64` |
+| macOS Apple Silicon | `tgb-darwin-arm64` |
+| macOS Intel | `tgb-darwin-x64` |
+
+macOS / Linux 下载后需要 `chmod +x` 并放到 PATH 中。
+
 查看**所有命令、子命令和全部参数**：
 
 ```bash
