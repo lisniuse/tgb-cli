@@ -98,7 +98,7 @@ export function parseThreads(html: string): ForumThread[] {
   return threads;
 }
 
-function parseTotalPages(html: string): number {
+export function parseTotalPages(html: string): number {
   const $ = load(html);
   const text = $.root().text();
   const match = text.match(/共\s*(\d+)\s*\/\s*(\d+)\s*页/);

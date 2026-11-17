@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><title>测试帖子_测试作者_淘股吧</title></head>
+<body>
+  <div id="gioMsg" type="5"></div>
+  <div class="article-content">
+    <div class="article-tittle" id="stockTitle">测试帖子标题</div>
+    <div class="article-data">
+      <span class="data-userid cursor">
+        <a href="/blog/123" data-user-id="123"><img src="//image.tgb.cn/img/avatar.png_60wh.png">测试作者</a>
+      </span>
+      <span>淘股吧原创&nbsp; 2026-11-17 15:09&nbsp;</span>
+      <span>浏览 1.2万</span>
+      <span>评论 7</span>
+    </div>
+    <div class="article-text p_coten" id="first">
+      第一行<br>第二行
+      <img data-original="https://image.tgb.cn/img/pic.jpg_760w.png">
+      <img src="https://css.tgb.cn/images/emoji.gif">
+    </div>
+    <div class="article-button">
+      <a data-topic-id="8923115" data-useful-num="4" onclick="AddUseful(this.dataset.topicId,this.dataset.usefulNum,'T',this.dataset.loginState)">赞</a>
+      <a data-topic-id="8923115" data-topic-type="5" onclick="addMyCol(this.dataset.topicId,this.dataset.loginState,this.dataset.topicType)">收藏</a>
+    </div>
+  </div>
+
+  <div class="comment-lists">
+    <div class="comment-data user_123" id="reply_123_1">
+      <div class="comment-data-left left">
+        <a href="/blog/123" data-user-id="123"><img class="comment-data-user-img" data-original="//image.tgb.cn/img/avatar.png_60wh.png"></a>
+      </div>
+      <div class="comment-data-right right">
+        <div class="comment-data-user">
+          <a class="user-name cursor" href="/blog/123" data-user-id="123">测试作者</a>
+          <span>楼主</span>
+          <span class="pcyclspan">2026-11-17 15:25</span>
+        </div>
+        <div class="comment-data-text" id="reply104991040">楼主回复</div>
+        <div class="comment-data-button">
+          <span class="left">沙发 · 淘股吧</span>
+          <a data-reply-id="104991040" data-useful-num="2" onclick="AddUseful(this.dataset.replyId,this.dataset.usefulNum,'R',this.dataset.loginState)">赞</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="comment-data user_456" id="reply_456_2">
+      <div class="comment-data-right right">
+        <div class="comment-data-user">
+          <a class="user-name cursor" href="/blog/456" data-user-id="456">路人</a>
+          <span class="pcyclspan">2026-11-17 16:00</span>
+        </div>
+        <div class="comment-data-text" id="reply104991041">路人回复</div>
+        <div class="comment-data-button">
+          <span class="left">板凳</span>
+          <a data-reply-id="104991041" data-useful-num="0" onclick="AddUseful(this.dataset.replyId,this.dataset.usefulNum,'R',this.dataset.loginState)">赞</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="t_page"><span>共<b>1</b>/3页</span></div>
+</body>
+</html>

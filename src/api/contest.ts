@@ -47,7 +47,7 @@ export interface Contest {
   url: string;
 }
 
-interface RawContest {
+export interface RawContest {
   seq?: number;
   userID?: string | number;
   userName?: string;
@@ -81,7 +81,7 @@ function formatDate(ms: number | undefined): string | undefined {
   return date.toLocaleDateString("zh-CN", { timeZone: "Asia/Shanghai" });
 }
 
-function parseContest(raw: RawContest, status: ContestStatus): Contest {
+export function parseContest(raw: RawContest, status: ContestStatus): Contest {
   const progress =
     raw.currentDif !== undefined && raw.daysDif !== undefined ? `${raw.currentDif}/${raw.daysDif}天` : undefined;
   return {

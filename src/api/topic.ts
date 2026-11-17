@@ -126,7 +126,7 @@ export function parseTopicPage(html: string, url: string, page = 1, sort: ReplyS
   };
 }
 
-function extractPageFromInput(input: string): number | undefined {
+export function extractPageFromInput(input: string): number | undefined {
   const match = input.match(/\/a\/[A-Za-z0-9]+-(\d+)/) || input.match(/^[A-Za-z0-9]+-(\d+)(?:[?#].*)?$/);
   if (!match) return undefined;
   const page = Number.parseInt(match[1], 10);
