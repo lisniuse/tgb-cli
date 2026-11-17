@@ -52,6 +52,12 @@ cp dist/tgb /usr/local/bin/
 
 macOS / Linux 下载后需要 `chmod +x` 并放到 PATH 中。
 
+macOS 未签名程序如被 Gatekeeper 拦截：
+
+```bash
+xattr -d com.apple.quarantine ./tgb-darwin-arm64
+```
+
 查看**所有命令、子命令和全部参数**：
 
 ```bash
